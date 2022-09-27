@@ -5,20 +5,20 @@
 class Govpn < Formula
   desc "govpn helps you easily and quickly provision EC2 with terraform and consume vpn service on your mobile or computer via outline application."
   homepage ""
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ghdwlsgur/govpn/releases/download/v0.1.6/govpn_0.1.6_Darwin_arm64.tar.gz"
-      sha256 "c04c1e750062e8b07cb91e2f905f51233596ef8732718513f814ac179cb8b525"
+      url "https://github.com/ghdwlsgur/govpn/releases/download/v0.1.7/govpn_0.1.7_Darwin_arm64.tar.gz"
+      sha256 "b85e8303d26ef47ab10ffe636f2014749a43ca4c714293d068ea68f186e25f37"
 
       def install
         bin.install "govpn"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/govpn/releases/download/v0.1.6/govpn_0.1.6_Darwin_x86_64.tar.gz"
-      sha256 "34c5118b34895a671f4006ad2f46bab947df4155a68b8baf18ca09b6ae752d87"
+      url "https://github.com/ghdwlsgur/govpn/releases/download/v0.1.7/govpn_0.1.7_Darwin_x86_64.tar.gz"
+      sha256 "c4815f1d0ca2edb946f6af24c044f127c9489ae50343a9d7556d201f118a70a8"
 
       def install
         bin.install "govpn"
@@ -28,16 +28,16 @@ class Govpn < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghdwlsgur/govpn/releases/download/v0.1.6/govpn_0.1.6_Linux_arm64.tar.gz"
-      sha256 "7884a15a59028df57b14bb63f885fd371bfd5e0f1d1acace4bef96cab2db0422"
+      url "https://github.com/ghdwlsgur/govpn/releases/download/v0.1.7/govpn_0.1.7_Linux_arm64.tar.gz"
+      sha256 "408065801998b713e6335fab2f695fe3504f2e257b8d5ac1ea21c03bee7eab3c"
 
       def install
         bin.install "govpn"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/govpn/releases/download/v0.1.6/govpn_0.1.6_Linux_x86_64.tar.gz"
-      sha256 "453e6d62f42ebc08079ba629c911f2784047670b912c1728e66c1f3db454308f"
+      url "https://github.com/ghdwlsgur/govpn/releases/download/v0.1.7/govpn_0.1.7_Linux_x86_64.tar.gz"
+      sha256 "ce7c0ca83f6f4a9a121aa10f296bf7e348317bf27ef3959afc707ea40212e768"
 
       def install
         bin.install "govpn"
